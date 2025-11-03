@@ -8,3 +8,6 @@ This repository showcases my cybersecurity home lab projects, which are a collec
 
 ### 1 Cybersecurity Tools
 - [The Linux Command Line and Security Basics](1%20Cybersecurity%20Tools/TheLinuxCommandLineSecurityBasics.md)
+
+### 2 Enviroment Variables
+- [Environment Variable and Set-UID Program](2%20Enviroment%20Variables/EnvironmentVariableSetUIDProgram.md)
