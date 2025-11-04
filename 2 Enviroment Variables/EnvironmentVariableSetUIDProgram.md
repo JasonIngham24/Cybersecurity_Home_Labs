@@ -59,3 +59,36 @@ myenv.c :
 	![[Set-UID Root Shell.png]]
 	Note: The environment variables are passed to the Set-UID child process. Root Shell acquired from our set-UID program running PATH environment variable.
 ### Task 6: The PATH Environment Variable and `Set-UID` Programs
++ Victim (per lab):
+	![[victim_ls.c.png]]
++ Create a malicious `ls` earlier in `PATH`:
+	![[PATH vulnerability.png]]
+	**Complication noted by lab -** On Ubuntu 20.04+, `/bin/sh` → `/bin/dash`, which **drops privileges** if running set-UID, defusing the attack. To _demonstrate_ the risk (for learning), the lab instructs temporarily linking `/bin/sh` to a shell without that countermeasure (e.g., zsh):
+	**Observation:** With `/bin/sh` pointing to `zsh`, the malicious `ls` runs with euid 0; with `dash`, privileges drop. 
+	**Conclusion:** `system()` is dangerous in set-UID code.
+### Task 7: The `LD PRELOAD` Environment Variable and Set-UID Programs
++ Create the preload library and a test program:
+	![[mylib.c.png]]
++ Run cases:
+	+ Normal program, normal user
+		![[run case 1.png]]
+	+ Set-UID root
+		![[run case 2.png]]
+	+ Re-export as root then run
+		![[run case 3.png]]
++ **Conclusion:** Loader security policies treat `LD_PRELOAD` specially for privileged execs; you must note which variants are honored vs. stripped on your distro.
+### Task 8: Invoking External Programs Using system() versus execve()
++ Use your uploaded `catall.c`. First build it _as given_ (uses `system()`):
+	![[catall.c.png]]
++ As Normal User:
+	![[keepme.png]]
+	**Observation:** With `system(command)`, the concatenated shell command executes — integrity is compromised
++ switch to `execve()`
+	![[execv.png]]
+	**Conclusion:** `execve()` avoids shell interpretation and thwarts command injection; `system()` is unsafe in privileged code.
+### Task 9: Capability Leaking
++ Use your uploaded `cap_leak.c`. Build set-UID and prep target file:
+	![[cap_leak.png]]
++ Run as Normal User
+	![[capatability Leak.png]]
+	**Observation:** You can still write to `/etc/zzz` after `setuid(getuid())` because the **open file descriptor** was obtained while privileged, the capability leak.
