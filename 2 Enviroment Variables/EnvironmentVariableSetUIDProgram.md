@@ -12,7 +12,7 @@ The learning objective of this lab is understand how environment variables affec
 
 ### Task 1: Manipulating Environment Variables
 + Use printenv or env command to print out the environment variables.
-		![[C:\Users\jason\OneDrive\Desktop\New Paltz\Fall 2025\CPS493 - Cybersecurity\Cybersecurity_Home_Labs\2 Enviroment Variables\Screenshots\Use printenv or env.png]]
+		![[Use printenv or env.png]]
 	Note: both `printenv` and `env` are commands used to **display environment variables**, but they have slightly different behaviors and use cases:
 	+ `printenv` : Prints the values of environment variables.
 	+ `env` : Runs a command in a modified environment or displays the current environment if no command is given.
