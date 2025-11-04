@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "e85a18692ca3dd35",
+        "id": "92183c179314dd37",
         "type": "tabs",
         "children": [
           {
-            "id": "501eb98224e11117",
+            "id": "1512cb2ba46296c5",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "2 Enviroment Variables/EnvironmentVariableSetUIDProgram.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "EnvironmentVariableSetUIDProgram"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "2 Enviroment Variables/EnvironmentVariableSetUIDProgram.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for README"
+              "title": "Backlinks for EnvironmentVariableSetUIDProgram"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "2 Enviroment Variables/EnvironmentVariableSetUIDProgram.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from README"
+              "title": "Outgoing links from EnvironmentVariableSetUIDProgram"
             }
           },
           {
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md",
+                "file": "2 Enviroment Variables/EnvironmentVariableSetUIDProgram.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of README"
+              "title": "Outline of EnvironmentVariableSetUIDProgram"
             }
           }
         ]
@@ -169,6 +169,22 @@
       "bases:Create new base": false
     }
   },
-  "active": "501eb98224e11117",
-  "lastOpenFiles": []
+  "active": "1512cb2ba46296c5",
+  "lastOpenFiles": [
+    "2 Enviroment Variables/EnvironmentVariableSetUIDProgram.md",
+    "2 Enviroment Variables/Screenshots/Set-UID Root Shell.png",
+    "2 Enviroment Variables/Screenshots/Compile,change owner,set-UID print_env.c.png",
+    "2 Enviroment Variables/Screenshots/print_env.c.png",
+    "2 Enviroment Variables/Screenshots/run system_call.c.png",
+    "2 Enviroment Variables/Screenshots/system_call.c.png",
+    "2 Enviroment Variables/Screenshots/edit myenv.c.png",
+    "2 Enviroment Variables/Screenshots/running edited myenv.c.png",
+    "2 Enviroment Variables/Screenshots/run modefied myenv.c.png",
+    "2 Enviroment Variables/Screenshots/change myenv.c.png",
+    "2 Enviroment Variables/Screenshots/compile and run myenv.c.png",
+    "().md",
+    "2 Enviroment Variables/Screenshots",
+    "2 Enviroment Variables/New folder",
+    "README.md"
+  ]
 }
