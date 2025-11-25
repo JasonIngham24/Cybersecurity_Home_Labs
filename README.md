@@ -13,4 +13,4 @@ This repository showcases my cybersecurity home lab projects, which are a collec
 - [Environment Variable and Set-UID Program](2%20Enviroment%20Variables/EnvironmentVariableSetUIDProgram.md)
 
 ### 3 Cross Site Request Forgery
-- [Cross Site Request Forgery Lab](3%20Cross%20Site%20Request%20Forgery\CrossSiteRequestForgeryLab.md)
+- [Cross Site Request Forgery Lab](3%20Cross%20Site%20Request%20Forgery/CrossSiteRequestForgeryLab.md)
